@@ -13,10 +13,10 @@ from google.api_core import client_options as client_options_lib
 
 # from google.oauth2 import service_account
 
-# credentials = service_account.Credentials.from_service_account_file('/home/ur3/yogesh/client_secret.json')
+
 
 # client = palm.Client(credentials=credentials)
-# # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/ur3/yogesh/client_secret.json'
+
 
 import google.generativeai as palm
 # from google.api_core import client_options as client_options_lib
@@ -36,7 +36,7 @@ class SharedControl:
         # ************ Add whatever you need ************
         # recommended end-effector motion range: x [0.189, 0.304], y [-0.074, 0.296], z [0.05, 0.20]
         self.iter = 0
-        api_key = 'AIzaSyDcsoRAVzSw7TiGmzOcXBomckfxIr_DRMs'
+        api_key = <YOUR KEY HERE>
         palm.configure(
             api_key=api_key,
             transport="rest",
